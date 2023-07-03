@@ -8,7 +8,7 @@ export function TopCard(props) {
     <div className="relative" onClick={() => {console.log("working")}}>
       <img
         src={post.images}
-        alt="Streetically"
+        alt="The Visual Chef"
         className=""
       />
     </div>

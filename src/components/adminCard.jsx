@@ -48,7 +48,7 @@ export function AdminCard(props) {
     <div className="relative" onClick={() => {console.log("working")}}>
       <img
         src={post.images}
-        alt="Product"
+        alt="The Visual Chef"
         className=""
       />
 
