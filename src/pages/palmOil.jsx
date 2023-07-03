@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { TopCard } from "../components/topcard";
 
 export function PalmOil() {
+  //   const { product } = useParams();
   const navigate = useNavigate();
 
   const [clothsList, setclothsList] = useState([]);
@@ -38,7 +39,7 @@ export function PalmOil() {
     <div className="bg-[#d5d1ce] text-[#000009]">
       <div className="flex flex-col items-center lg:top-[13%] pt-[70px] lg:z-[-1]">
       <h1 className="text-[3rem] font-bold">Palm Oil</h1>
-        <div className="mb-[5rem] flex flex-wrap gap-3 w-[90vw] items-center justify-center mt-[1rem]">
+      <div className="mb-[5rem] flex-col flex-wrap mx-[2rem] gap-3 items-center justify-center mt-[1rem]">
           {clothsList.map((post, index) => {
             return (
               <div key={index} className="max-w-4xl">
