@@ -5,12 +5,14 @@ import { Navbar } from './components/navbar';
 import { LandingPage } from './pages/landingpage';
 import { ScrollToTop } from './components/scrolltotop';
 import { useState } from 'react';
-import { About } from './pages/about';
-import { Weddings } from './pages/wedding';
-import { Engagements } from './pages/engagement';
+import { PalmOil} from './pages/palmOil';
 import { Contact } from './pages/contact';
 import { AddPicture } from './pages/addPictures';
 import {Admin} from './pages/Admin';
+import { Bubbles } from './pages/bubbles';
+import { Gele } from './pages/gele';
+import { BISD } from './pages/bisd';
+import { Smile } from './pages/smile';
 
 export const Theme = React.createContext();
 export const Settheme = React.createContext();
@@ -20,7 +22,7 @@ function App() {
   const [theme, settheme] = useState("Dark");
 
   return (
-    <div className={theme === "Dark" ? "App h-[100vh] bg-[#000009] text-white bodyfont" : theme === "Light" ? "App bg-white text-[#323b0a] bodyfont" : ""}>
+    <div className={theme === "Dark" ? "App h-[100vh] bg-[#d5d1ce] text-white bodyfont" : theme === "Light" ? "App bg-white text-[#323b0a] bodyfont" : ""}>
       <Theme.Provider value={theme}>
         <Settheme.Provider value={settheme}>
     <Router>
@@ -28,12 +30,14 @@ function App() {
      <Navbar/>
       <Routes>
       <Route path="/" element={<LandingPage />} />
-      <Route path="/About" element={<About />} />
-      <Route path="/Weddings" element={<Weddings />} />
-      <Route path="/Engagements" element={<Engagements />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/AddPicture" element={<AddPicture />} />
       <Route path="/Admin" element={<Admin />} />
+      <Route path="/PalmOil" element={<PalmOil />} />
+      <Route path="/Bubbles" element={<Bubbles />} />
+      <Route path="/Gele" element={<Gele />} />
+      <Route path="/Bisd" element={<BISD />} />
+      <Route path="/Smile" element={<Smile />} />
       </Routes>
      </ScrollToTop>
     </Router>

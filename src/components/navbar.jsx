@@ -42,15 +42,15 @@ export function Navbar() {
         }
       >
         
-<div className="flex justify-center">
-        <a href="https://www.instagram.com/streetically" target="_Blank">
+<div className="flex justify-center lg:hidden">
+        <a href="https://www.instagram.com/thevisualchef" target="_Blank">
           <svg
             width="20px"
             viewBox="0 0 20 20"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            fill="#ffffff"
+            fill="#000009"
           >
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g
@@ -73,7 +73,7 @@ export function Navbar() {
                 <g
                   id="Dribbble-Light-Preview"
                   transform="translate(-340.000000, -7439.000000)"
-                  fill="#ffffff"
+                  fill="#000009"
                 >
                   {" "}
                   <g id="icons" transform="translate(56.000000, 160.000000)">
@@ -91,7 +91,7 @@ export function Navbar() {
           </svg>
         </a>
         <a
-          href="https://twitter.com/streetically/"
+          href="https://www.instagram.com/thevisualchef"
           target="_Blank"
           className="mx-[0.5rem]"
         >
@@ -101,7 +101,7 @@ export function Navbar() {
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            fill="#ffffff"
+            fill="#000009"
           >
             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
             <g
@@ -124,7 +124,7 @@ export function Navbar() {
                 <g
                   id="Dribbble-Light-Preview"
                   transform="translate(-60.000000, -7521.000000)"
-                  fill="#ffffff"
+                  fill="#000009"
                 >
                   {" "}
                   <g id="icons" transform="translate(56.000000, 160.000000)">
@@ -142,6 +142,8 @@ export function Navbar() {
           </svg>
         </a>
       </div>
+
+      <p className="text-[1.5rem] text-[#000009] font-bold">The Visual Chef</p>
 
         <div
           onClick={() => {
@@ -171,21 +173,21 @@ export function Navbar() {
                   <path
                     id="vector"
                     d="M3 6H21"
-                    stroke="#ffffff"
+                    stroke="#000009"
                     stroke-width="1.5"
                     stroke-linecap="round"
                   ></path>{" "}
                   <path
                     id="vector_2"
                     d="M5 12H19"
-                    stroke="#ffffff"
+                    stroke="#000009"
                     stroke-width="1.5"
                     stroke-linecap="round"
                   ></path>{" "}
                   <path
                     id="vector_3"
                     d="M7 18H17"
-                    stroke="#ffffff"
+                    stroke="#000009"
                     stroke-width="1.5"
                     stroke-linecap="round"
                   ></path>{" "}
@@ -203,34 +205,52 @@ export function Navbar() {
               setshowMobile(false);
             }}
           >
-            <p className="text-[2vw] headingfont font-bold">Home</p>
+            <p className="text-[1.5vw] font-bold text-[#000009]">Home</p>
           </Link>
           <Link
-            to="/About"
+            to="/PalmOil"
             className="nav"
             onClick={() => {
               setshowMobile(false);
             }}
           >
-            <p className="text-[2vw] headingfont font-bold mx-[1rem]">About</p>
+            <p className="text-[1.5vw] mx-[1rem] font-bold text-[#000009]">Palm Oil</p>
           </Link>
           <Link
-            to="/Weddings"
+            to="/Bubbles"
             className="nav"
             onClick={() => {
               setshowMobile(false);
             }}
           >
-            <p className="text-[2vw] headingfont font-bold">Weddings</p>
+            <p className="text-[1.5vw] mx-[1rem] font-bold text-[#000009]">Bubbles</p>
           </Link>
           <Link
-            to="/Engagements"
+            to="/Bisd"
             className="nav"
             onClick={() => {
               setshowMobile(false);
             }}
           >
-            <p className="text-[2vw] headingfont font-bold mx-[1rem]">Engagements</p>
+            <p className="text-[1.5vw] mx-[1rem] font-bold text-[#000009]">Beauty in skin diversity</p>
+          </Link>
+          <Link
+            to="/Smile"
+            className="nav"
+            onClick={() => {
+              setshowMobile(false);
+            }}
+          >
+            <p className="text-[1.5vw] mx-[1rem] font-bold text-[#000009]">Smile</p>
+          </Link>
+          <Link
+            to="/Gele"
+            className="nav"
+            onClick={() => {
+              setshowMobile(false);
+            }}
+          >
+            <p className="text-[1.5vw] mx-[1rem] font-bold text-[#000009]">Gele</p>
           </Link>
           <Link
             to="/Contact"
@@ -239,13 +259,10 @@ export function Navbar() {
               setshowMobile(false);
             }}
           >
-            <p className="text-[2vw] headingfont font-bold">Contact</p>
+            <p className="text-[1.5vw] font-bold text-[#000009]">Contact</p>
           </Link>
         </div>
-        <img
-          className="left-[20%] lg:left-[20%] absolute lg:w-[50vw] w-[60vw] logoImage"
-          src="https://res.cloudinary.com/dvl38skbc/image/upload/v1685966683/streetically/streetically_logo_NEW_azksli.png"
-        />
+     
 
         <div
           className={
@@ -294,36 +311,58 @@ export function Navbar() {
             </p>
           </Link>
           <Link
-            to="/About"
-            className="nav"
-            onClick={() => {
-              setshowMobile(false);
-            }}
-          >
-            <p className="text-[6vw] text-[#D3D3D3] headingfont font-bold mt-[1rem]">
-              About
-            </p>
-          </Link>
-          <Link
-            to="/Weddings"
+            to="/PalmOil"
             className="nav"
             onClick={() => {
               setshowMobile(false);
             }}
           >
             <p className="text-[6vw] text-[#D3D3D3] my-[1rem] headingfont font-bold">
-              Weddings
+              Palm Oil
             </p>
           </Link>
           <Link
-            to="/Engagements"
+            to="/Bubbles"
             className="nav"
             onClick={() => {
               setshowMobile(false);
             }}
           >
-            <p className="text-[6vw] text-[#D3D3D3] headingfont font-bold">
-              Engagements
+            <p className="text-[6vw] text-[#D3D3D3] my-[1rem] headingfont font-bold">
+              Bubbles
+            </p>
+          </Link>
+          <Link
+            to="/Bisd"
+            className="nav"
+            onClick={() => {
+              setshowMobile(false);
+            }}
+          >
+            <p className="text-[6vw] text-[#D3D3D3] my-[1rem] headingfont font-bold">
+              Beauty In Skin Diversity
+            </p>
+          </Link>
+          <Link
+            to="/Smile"
+            className="nav"
+            onClick={() => {
+              setshowMobile(false);
+            }}
+          >
+            <p className="text-[6vw] text-[#D3D3D3] my-[1rem] headingfont font-bold">
+              Smile
+            </p>
+          </Link>
+          <Link
+            to="/Gele"
+            className="nav"
+            onClick={() => {
+              setshowMobile(false);
+            }}
+          >
+            <p className="text-[6vw] text-[#D3D3D3] my-[1rem] headingfont font-bold">
+              Gele
             </p>
           </Link>
           <Link
@@ -333,7 +372,7 @@ export function Navbar() {
               setshowMobile(false);
             }}
           >
-            <p className="text-[6vw] text-[#D3D3D3] mt-[1rem] headingfont font-bold">
+            <p className="text-[6vw] text-[#D3D3D3] headingfont font-bold">
               Contact
             </p>
           </Link>

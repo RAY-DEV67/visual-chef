@@ -19,14 +19,14 @@ export function AdminCard(props) {
    const removePicture = async () => {
       try {
   
-        const docRef = collection(db, "Streetically");
+        const docRef = collection(db, "Visual Chef");
         const CartToDeleteQuery = query(
           docRef,
           where("postId", "==", post?.id)
         );
   
         const CartToDeleteData = await getDocs(CartToDeleteQuery);
-        const CartToDelete = doc(db, "Streetically", post.id);
+        const CartToDelete = doc(db, "Visual Chef", post.id);
         await deleteDoc(CartToDelete);
         window.location.reload()
         console.log("DocumentDeleted");

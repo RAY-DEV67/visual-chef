@@ -1,25 +1,23 @@
 import { useState } from "react";
 import db from "../config/firebase";
-import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { TopCard } from "../components/topcard";
 
-export function Engagements() {
-  //   const { product } = useParams();
+export function BISD() {
   const navigate = useNavigate();
 
   const [clothsList, setclothsList] = useState([]);
   const [lastDocuments, setlastDocuments] = useState(null);
-  const [isEmpty, setisEmpty] = useState(false);
-  const [hasmore, sethasmore] = useState(true);
   const [loading, setloading] = useState(false);
   const [empty, setempty] = useState(false);
+  const [portfolio, setportfolio] = useState("Engagements");
 
   useEffect(() => {
     setloading(true);
     setempty(false);
-    db.collection("Streetically").where("category", "==", "Engagements")
+    db.collection("Visual Chef")
+    .where("category" , "==" , "BISD")
       .get()
       .then((collections) => {
         const cloths = collections.docs.map((cloths) => {
@@ -33,13 +31,13 @@ export function Engagements() {
           setempty(true);
         }
       });
-  }, []);
+  }, [portfolio]);
   
 
   return (
-    <div className="bg-[#000009]">
+    <div className="bg-[#d5d1ce] text-[#000009]">
       <div className="flex flex-col items-center lg:top-[13%] pt-[70px] lg:z-[-1]">
-      <h1 className="text-[3rem] font-bold">Engagements</h1>
+      <h1 className="text-[3rem] font-bold">Beauty In Skin Diversity</h1>
         <div className="mb-[5rem] flex flex-wrap gap-3 w-[90vw] items-center justify-center mt-[1rem]">
           {clothsList.map((post, index) => {
             return (
